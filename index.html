@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Dummy</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.1/angular-messages.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-rc.1/angular-resource.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0-rc.1/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        html, body, input, select, textarea{ font-size: 1.05em !important}
+    </style>
+<body>
+   <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">AngularJS</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#/second"><i class="fa fa-stop"></i> Second</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+        <!-- pages got plopped into here through ng-view -->
+			<div ng-view>
+                
+                
+		    </div>
+
+</body>
+</html>
